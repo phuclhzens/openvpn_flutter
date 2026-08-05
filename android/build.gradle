@@ -44,8 +44,14 @@ android {
     defaultConfig {
         minSdkVersion 16
     }
+
+    packagingOptions {
+        jniLibs {
+            useLegacyPackaging true
+        }
+    }
 }
 
 dependencies {
-    implementation 'com.github.nizwar:openvpn_library:b3941ef040'
+    implementation 'com.github.nizwar:openvpn_library:5ee8405716'
 }
